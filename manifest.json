@@ -1,0 +1,32 @@
+{
+  "name": "syntech-trivia-hack",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "SynTech Trivia Hack",
+  "browser_action": {
+    "default_icon": "favicon.png"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "options_page": "./html/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://preguntados.com/game/*",
+        "http://api.preguntados.com/*",
+        "https://apps.facebook.com/triviacrack/*"
+      ],
+      "js": [
+        "./externals/jquery.min.js",
+        "./config/config.js",
+        "./scripts/classes/game.js",
+        "./scripts/controller/gameController.js",
+        "./scripts/controller/processorController.js",
+        "./scripts/viewcontroller/gameViewController.js",
+        "./scripts/content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}

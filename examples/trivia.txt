@@ -1,0 +1,35 @@
+URL
+http://preguntados.com/game/#game/6250262746
+
+
+API
+http://api.preguntados.com/api/users/267266060/games/6250262746
+
+267266060 -> AccountId
+6250262746 -> GAME
+
+CATEGORIES
+
+trivia_cat_01 = History
+trivia_cat_02 = Geography
+trivia_cat_03 = Arts
+trivia_cat_04 = Sports
+trivia_cat_05 = Entertainment
+trivia_cat_06 = Science
+
+<div id="preguntados-cheat"><div class="container" style="
+    color: #000000;
+">
+    <div class="row"><form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="anwser">Anwser:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" style="cursor: default" id="anwser" disabled="">
+    </div>
+  </div></form></div></div></div>
+
+
+  //ROOMS
+
+  http://api.preguntados.com/api/users/267266060/rooms/6299327016
+  

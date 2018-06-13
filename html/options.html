@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SynTech Trivia Hack Options</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/photoswipe.css" rel="stylesheet">
+    <link href="css/default-skin/default-skin.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Account information</div>
+                    <div style="float:right; font-size: 80%; position: relative; top:-10px"><a id="show-gallery" href="#">How to setup?</a></div>
+                </div>
+                <div style="padding-top:30px" class="panel-body">
+                    <form id="options-form" class="form-horizontal" role="form">
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="accountId" type="text" class="form-control" name="accountId" value="" placeholder="Account Id">
+                        </div>
+                        <div style="margin-top:10px ;padding-right: 15px; padding-left: 15px;" class="form-group">
+                            <!-- Button -->
+                            <div class="pull-right">
+                                <button type="submit" id="save" class="btn btn-primary" pattern="[0-9]">Save</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12 control">
+                                <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%">
+                                    <div id="status" class="alert alert-success animated" style="display:none" role="alert"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <div>Created by Andy Heyns - <a href="http://syntech-services.be" target="_blank">SynTech Services</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <!--<button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip">
+                            <!-- <a href="#" class="pswp__share--facebook"></a>
+                            <a href="#" class="pswp__share--twitter"></a>
+                            <a href="#" class="pswp__share--pinterest"></a>
+                            <a href="#" download class="pswp__share--download"></a> -->
+                        </div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="demo-gallery" style="display:none;">
+
+            <a href="images/image1.png" data-size="1920x1080" data-author="Andy Heyns">
+	          <img src="images/image1.png" alt="" />
+	          <figure>Login into your account. When you are on the dashboard. 'Click' on the menu. (three horizontal bars)</figure>
+	        </a>
+
+            <a href="images/image2.png" data-size="1920x1080" data-author="Andy Heyns">
+	          <img src="images/image2.png" alt="" />
+	          <figure>'Click' on the menu item 'Help'</figure>
+	        </a>
+
+            <a href="images/image3.png" data-size="1920x1080" data-author="Andy Heyns">
+	          <img src="images/image3.png" alt="" />
+	          <figure>'Click' on the menu item 'Support'. This will navigate you to the support page.</figure>
+	        </a>
+
+            <a href="images/image4.png" data-size="1920x1080" data-author="Andy Heyns">
+	          <img src="images/image4.png" alt="" />
+	          <figure>On this page, find your account Id. It's located in the URL. Note: '267266060' is my Id. You will have a different one.</figure>
+	        </a>
+
+            <a href="images/image5.png" data-size="1920x1080" data-author="Andy Heyns">
+	          <img src="images/image5.png" alt="" />
+	          <figure>Locate 'installed addon', 'right-click' it and go to 'Options'.</figure>
+	        </a>
+
+            <a href="images/image6.png" data-size="1920x1080" data-author="Andy Heyns">
+	          <img src="images/image6.png" alt="" />
+	          <figure>You need the paste your account Id into this field. If pasted correctly, the addon is installed correctly for your account.</figure>
+	        </a>
+
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/photoswipe.min.js"></script>
+    <script src="./js/photoswipe-ui-default.min.js"></script>
+    <script src="./js/options.js"></script>
+    <script src="./js/photoswipe-options.js"></script>
+</body>
+
+</html>
